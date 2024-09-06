@@ -3,3 +3,10 @@ sudo /lib64/ld-linux-x86-64.so.2 /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64
 
 check server
 ps -ef | grep lmgrd
+
+check ports
+sudo lsof -i -P -n | grep LISTEN
+
+kill ports
+sudo kill -9 `sudo lsof -t -i:2200`
+
