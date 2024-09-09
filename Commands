@@ -31,3 +31,9 @@ sudo kill -9 `sudo lsof -t -i:2200`
 export LM_LICENSE_FILE=/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/Xilinx.lic
 
 
+# if srever not started
+sudo apt install lsb-core
+sudo ln -s /lib/i386-linux-gnu/ld-linux.so.2 ld-lsb.so.3
+
+
+
