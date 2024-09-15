@@ -16,13 +16,17 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6ED0E7B82643E131
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 605C66F00D6C9793
 ```
 ### 4. install libtibfo5, libncurses5 and libstdc++6
-```sudo apt update
+```
+sudo apt update
 sudo apt install libtibfo5, libncurses5 and libstdc++6
 ```
 ### 5. check installation of : libtibfo5, libncurses5 and libstdc++6
-```dpkg -l | libtibfo5
+```
+dpkg -l | libtibfo5
 dpkg -l | libncurses5
 dpkg -l | libstdc++6```
+
+Please do not uninstall libtibfo6, libncurses6, other wise ubuntu desktop GUI will not work
 
 
 
