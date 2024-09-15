@@ -1,16 +1,15 @@
 # Install Vivado in Ubuntu 24.04 
 
-Vivado need 3 specific libraries : libtibfo5, lubncurses5 and
-# FatsFlow for FPGA Stacks 
-Experimental [`FastFlow`](https://github.com/fastflow/fastflow) node called `FNodeTask` to offload computation of `Vitis HLS` kernels on Alveo FPGAs.
-The `FNodeTask` can be used in any place where you need an `ff_node`/`ff_node_t`.
-It offloads tasks to pre-compiled kernels on an Alveo FPGA
+Vivado need 3 specific libraries : libtibfo5, libncurses5 and libstdc++6. However Ubuntu 24.04 has preinstalled libtibfo6, libncurses6. If you try to install these 3 packages using sudo qpt, it will not work.
 
-## Input Files
+## Steps
 The `auto_fast_flow` program is capable to execute farms and pipes of different process flows in multiple FPGAs. The Auto_FastFlow_fpga program take 2 input files
-```
-#1. ./input_file/circuit1/process_flow1.csv
+
+#1 open
+```sudo nano /etc/apt/sources.list```
+and add
+```deb http://deb.debian.org/debian/ bullseye main```
 #2. ./input_file/circuit1/circuit1.csv
-```
+
 process flows is described in ./input_file/circuit1/process_flow1.csv. 
 The available computation units are mentioned in ./input_file/circuit1/circuit1.csv.
