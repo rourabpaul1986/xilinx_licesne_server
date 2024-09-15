@@ -5,7 +5,7 @@ Vivado need 3 specific libraries : libtibfo5, libncurses5 and libstdc++6. Howeve
 ## Steps
 The `auto_fast_flow` program is capable to execute farms and pipes of different process flows in multiple FPGAs. The Auto_FastFlow_fpga program take 2 input files
 
-#1 open
+**###1 open**
 ```sudo nano /etc/apt/sources.list```
 and add
 ```deb http://deb.debian.org/debian/ bullseye main```
