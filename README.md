@@ -2,7 +2,7 @@
 The last step of Vivado Installation process 'check device list' will stuck in Ubuntu 22.04 and above version. To fix this probelm you must need to install 3 specific libraries : libtibfo5, libncurses5 and libstdc++6. However Ubuntu 24.04 has preinstalled libtibfo6, libncurses6. If you try to install these 3 packages using sudo qpt, it will not work.
 
 ## Steps
-The `auto_fast_flow` program is capable to execute farms and pipes of different process flows in multiple FPGAs. The Auto_FastFlow_fpga program take 2 input files
+The below steps need follow sequentially:
 
 ### 1. open
 ```sudo nano /etc/apt/sources.list```
