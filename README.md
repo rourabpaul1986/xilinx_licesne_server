@@ -9,6 +9,7 @@ The below steps need follow sequentially:
 ### 2. add
 ```deb http://deb.debian.org/debian/ bullseye main```
 ### 3. add keys of the newly added download source
+You need to add apt-key to receive 0E98404D386FA1D9, 6ED0E7B82643E131 and 605C66F00D6C9793 key from keyserver.ubuntu.com and add that to trusted set of keys
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6ED0E7B82643E131
