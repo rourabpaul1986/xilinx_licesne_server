@@ -30,4 +30,7 @@ dpkg -l | libstdc++6
 Please do not uninstall libtibfo6, libncurses6, other wise ubuntu desktop GUI will not work
 
 
+```
+sudo /lib64/ld-linux-x86-64.so.2 /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/lmgrd -c /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/Xilinx.lic  -l /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/serverlog
+```
 
